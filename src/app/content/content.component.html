@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-sm-2">
+    <h6 id="subnav">SUBNAV</h6>
+      <li *ngFor="let link of links" id="links">
+        {{ link.name }}
+      </li>
+    <h6 id="relatedLinks">RELATED LINKS</h6>
+      <li *ngFor="let link of links" id="links">
+        {{ link.name }}
+      </li>
+  </div>
+
+  <div class="col col-sm-10">
+    <h1 id="heading1">HEADING 1</h1>
+    <h3 id="heading2">heading 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus interdum rhoncus. 
+      Curabitur dictum est sit amet turpis auctor facilisis. Phasellus nec suscipit mi. In eget egestas risus. 
+      Aliquam erat volutpat. Duis euismod scelerisque orci, nec imperdiet lacus laoreet ac. 
+      Integer auctor massa tristique neque tincidunt blandit vel in augue.
+        <br>
+        <br>
+        Morbi vel diam vel arcu tincidunt rhoncus eget id mi. Vivamus sit amet semper nunc. 
+        Sed eget massa nec nulla lobortis vulputate sed id felis. Aenean finibus mattis lorem, eget laoreet orci ornare quis. 
+        Praesent ac mattis purus, ut porttitor tortor. Cras et condimentum velit. 
+        <br>
+        <br>
+        Donec viverra sem eu sapien feugiat accumsan. Vivamus ullamcorper augue tempor sem dapibus pulvinar. 
+        Pellentesque ac nunc euismod, lobortis eros vitae, bibendum ex. 
+        Aliquam vitae justo turpis. Praesent ex orci, ullamcorper et eros in, euismod gravida tellus. 
+        Nullam sed sapien dictum, eleifend mauris et, placerat odio. Aliquam quis sapien nisl.
+    </p>
+    <div class="container-fluid" id="images">
+      <div class="card">
+        <img src="{{ images.man.path }}" alt="Image 1" class="image">
+        <a href="{{ images.man.path }}">
+          <div class="middle">
+            <div class="title">{{ images.man.heading }}</div>
+            <div class="description">{{ images.man.description }}</div>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <img src="{{ images.wizard.path }}" alt="Image 2" class="image">
+        <a href="{{ images.wizard.path }}">
+          <div class="middle">
+            <div class="title">{{ images.wizard.heading }}</div>
+            <div class="description">{{ images.man.description }}</div>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <img src="{{ images.beast.path }}" alt="Image 3" class="image">
+        <a href="{{ images.beast.path }}">
+          <div class="middle">
+            <div class="title">{{ images.beast.heading }}</div>
+            <div class="description">{{ images.man.description }}</div>
+          </div>  
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,161 @@
+.row{
+    margin: 80px;
+}
+
+#subnav {
+    background-color: #E4E2E3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#relatedLinks {
+    background-color: #E4E2E3;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.col {
+    border-style: outset;
+    border-top: none;
+}
+
+h1 {
+    font-weight: bold;
+    color: #01A7E1;
+}
+
+h3 {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+img {
+    height: 100%;
+    widows: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 50px;
+    border-color: #01A7E1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.card:hover .image {
+    opacity: 0.5;
+    background-color: #01A7E1;
+}
+
+.card:hover {
+    opacity: 1;
+    background-color: #01A7E1;
+}
+
+.card:hover .middle{
+    opacity: 1;
+}
+
+.description {
+    color: white;
+    font-size: 16px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 320px) {
+    .row {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card  {
+        height: 200px;
+        width: 200px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .row {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card  {
+        height: 250px;
+        width: 250px;
+        margin-left: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+    .row {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card  {
+        height: 250px;
+        width: 250px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card {
+        margin-left: 120px;
+    }
+}
+
+
+@media only screen and (width: 1024px) {
+    .row {
+        margin: 0;
+        padding: 25px;
+    }
+
+    .container-fluid > .card {
+        margin-left: 230px;
+    }
+}
+
+@media only screen and (width: 1440px) {
+    .container-fluid > .card {
+        margin: 20px 20px 20px 75px;
+    }
+}
+
+
+
